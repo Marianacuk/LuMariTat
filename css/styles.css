@@ -46,7 +46,7 @@ section {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1600/900') no-repeat center center;
+    background: linear-gradient(rgba(52, 71, 241, 0.589), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1600/900') no-repeat center center;
     background-size: cover;
     height: 100vh;
     min-height: 500px;
