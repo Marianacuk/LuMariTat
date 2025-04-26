@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuMariTat | Soluciones de Software</title>
+    
+    <!-- Bootstrap 5.3.5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- DataTables CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    
+    <!-- FullCalendar CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="/api/placeholder/180/60" alt="LuMariTat Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-white">LuMariTat</h1>
+            <h2 class="text-white mb-4">Soluciones digitales para tu negocio de moda online</h2>
+            <p class="lead text-white mb-5">Especialistas en desarrollo de plataformas para venta de ropa nueva y usada</p>
+            <a href="#contacto" class="btn btn-primary btn-lg">Cotiza tu proyecto</a>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestros Servicios</h2>
+                <p class="lead">Soluciones personalizadas para emprendimientos de moda online</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Tiendas Online</h3>
+                            <p class="card-text">Plataformas e-commerce completas y personalizadas para venta de ropa nueva y usada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Apps Móviles</h3>
+                            <p class="card-text">Aplicaciones nativas para iOS y Android que potencian tu negocio de moda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Marketing Digital</h3>
+                            <p class="card-text">Estrategias SEO y SEM para aumentar la visibilidad de tu marca en línea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-server fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Sistemas de Inventario</h3>
+                            <p class="card-text">Control eficiente de inventario para gestionar productos nuevos y usados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-credit-card fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Pasarelas de Pago</h3>
+                            <p class="card-text">Integración de múltiples métodos de pago seguros para tu tienda online.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Soporte Técnico</h3>
+                            <p class="card-text">Asistencia continua para asegurar el funcionamiento óptimo de tu plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Proyectos Realizados</h2>
+                <p class="lead">Casos de éxito que demuestran nuestra experiencia</p>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-12">
+                    <table id="proyectosTable" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Proyecto</th>
+                                <th>Cliente</th>
+                                <th>Tipo</th>
+                                <th>Año</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ModaCircular</td>
+                                <td>EcoFashion</td>
+                                <td>E-commerce de ropa usada</td>
+                                <td>2024</td>
+                                <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal1">Ver más</button></td>
+                            </tr>
+                            <tr>
+                                <td>LuxuryStore</td>
+                                <td>Premium Brands</td>
+                                <td>Tienda de ropa de diseñador</td>
+                                <td>2023</td>
+                                <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal2">Ver más</button></td>
+                            </tr>
+                            <tr>
+                                <td>VintageVibe</td>
+                                <td>RetroFashion</td>
+                                <td>Marketplace de moda vintage</td>
+                                <td>2023</td>
+                                <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal3">Ver más</button></td>
+                            </tr>
+                            <tr>
+                                <td>TrendyApp</td>
+                                <td>FashionNow</td>
+                                <td>Aplicación móvil de moda</td>
+                                <td>2022</td>
+                                <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal4">Ver más</button></td>
+                            </tr>
+                            <tr>
+                                <td>EcoWardrobe</td>
+                                <td>GreenFashion</td>
+                                <td>Plataforma de intercambio de ropa</td>
+                                <td>2022</td>
+                                <td><button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#proyectoModal5">Ver más</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Modales para detalles de proyectos -->
+            <div class="modal fade" id="proyectoModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">ModaCircular - EcoFashion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="/api/placeholder/500/300" alt="ModaCircular" class="img-fluid rounded mb-3">
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Descripción</h4>
+                                    <p>Plataforma e-commerce especializada en la venta de ropa usada de segunda mano con enfoque sostenible. El proyecto incluye sistema de calificación de estado de las prendas, gestión de inventario y pasarela de pagos múltiple.</p>
+                                    <h4>Tecnologías</h4>
+                                    <p>React, Node.js, MongoDB, AWS, Stripe, PayPal</p>
+                                    <h4>Resultados</h4>
+                                    <p>Incremento del 150% en ventas online en los primeros 6 meses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Más modales similares para proyectos 2-5 -->
+            <!-- (Omitidos por brevedad) -->
+        </div>
+    </section>
+
+    <!-- Sección Equipo -->
+    <section id="equipo" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestro Equipo</h2>
+                <p class="lead">Profesionales dedicados a crear soluciones innovadoras</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Miembro del equipo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Laura Martínez</h5>
+                            <p class="card-text text-muted">CEO & Fundadora</p>
+                            <p class="card-text">Especialista en negocios digitales con 10 años de experiencia en e-commerce de moda.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Miembro del equipo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mario Rodríguez</h5>
+                            <p class="card-text text-muted">CTO</p>
+                            <p class="card-text">Ingeniero de software con especialidad en arquitecturas escalables para e-commerce.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Miembro del equipo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tatiana López</h5>
+                            <p class="card-text text-muted">Directora de Diseño UX/UI</p>
+                            <p class="card-text">Diseñadora creativa especializada en experiencias de usuario para retail digital.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="fab fa-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card team-card">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Miembro del equipo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Carlos Gómez</h5>
+                            <p class="card-text text-muted">Desarrollador Full Stack</p>
+                            <p class="card-text">Experto en implementación de soluciones técnicas para e-commerce de moda.</p>
+                            <div class="social-links">
+                                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Oficina LuMariTat" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Sobre LuMariTat</h2>
+                    <p class="lead mb-4">Somos una empresa especializada en desarrollo de soluciones digitales para emprendimientos de moda online.</p>
+                    <p class="mb-4">Fundada en 2019, LuMariTat nació con la misión de transformar el comercio electrónico de ropa, facilitando tanto la venta de prendas nuevas como usadas a través de plataformas intuitivas y eficientes.</p>
+                    <p class="mb-4">Nuestra visión es democratizar el acceso a tecnologías avanzadas para emprendedores del sector moda, promoviendo el comercio sostenible y la economía circular.</p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="feature-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="mb-0">Más de 50 proyectos exitosos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="feature-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="mb-0">Clientes en 5 países</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="feature-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="mb-0">Equipo de 15 especialistas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="feature-icon bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="mb-0">Tecnología de vanguardia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Preguntas Frecuentes</h2>
+                <p class="lead">Resolvemos tus dudas sobre nuestros servicios</p>
+            </div>
+            
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuánto tiempo toma desarrollar una tienda online completa?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            El tiempo promedio de desarrollo oscila entre 4 y 8 semanas, dependiendo de la complejidad del proyecto. Esto incluye diseño, desarrollo, pruebas y lanzamiento. Para tiendas con funcionalidades estándar, podemos implementar soluciones en tan solo 3 semanas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué métodos de pago puedo integrar en mi tienda?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Ofrecemos integración con múltiples pasarelas de pago como PayPal, Stripe, Mercado Pago, tarjetas de crédito/débito, transferencias bancarias y opciones de pago en efectivo. También podemos implementar soluciones personalizadas según las necesidades específicas de tu mercado.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo funciona el sistema para venta de ropa usada?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Nuestras plataformas para ropa usada incluyen características específicas como sistemas de categorización por estado de las prendas, opciones para cargar múltiples fotografías detalladas, descripciones amplias y procesos de verificación. También implementamos sistemas de puntuación y reseñas para generar confianza entre vendedores y compradores.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Ofrecen mantenimiento después del lanzamiento?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Sí, ofrecemos planes de mantenimiento mensual que incluyen actualizaciones de seguridad, corrección de errores, respaldo de datos y soporte técnico. También disponemos de paquetes de mantenimiento premium que incluyen mejoras continuas, análisis de rendimiento y optimizaciones periódicas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Pueden integrar mi tienda con redes sociales?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Absolutamente. Implementamos integración completa con Instagram Shopping, Facebook Marketplace, Pinterest y otras plataformas relevantes. Esto permite sincronizar inventarios, publicar automáticamente nuevos productos y gestionar ventas desde múltiples canales en una sola interfaz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Contáctanos</h2>
+                    <p class="mb-4">Estamos listos para ayudarte a desarrollar tu proyecto de e-commerce para moda. Completa el formulario o utiliza nuestros canales directos.</p>
+                    
+                    <div class="contact-info mb-4">
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Dirección</h5>
+                                <p class="mb-0">Av. Tecnológica 123, Ciudad Innovación</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Teléfono</h5>
+                                <p class="mb-0">+1 234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email</h5>
+                                <p class="mb-0">contacto@lumaritat.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mb-3">Agenda una consultoría</h4>
+                    <div id="calendar" class="mb-4"></div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Envíanos un mensaje</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="empresa" class="form-label">Empresa/Emprendimiento</label>
+                                    <input type="text" class="form-control" id="empresa">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="servicio" class="form-label">Servicio de interés</label>
+                                    <select class="form-select" id="servicio" required>
+                                        <option value="" selected disabled>Selecciona un servicio</option>
+                                        <option value="tienda">Tienda online</option>
+                                        <option value="app">Aplicación móvil</option>
+                                        <option value="marketing">Marketing digital</option>
+                                        <option value="inventario">Sistema de inventario</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <img src="/api/placeholder/150/50" alt="LuMariTat Logo" class="mb-3">
+                    <p>Soluciones digitales para emprendimientos de moda online. Especialistas en desarrollo de e-commerce para ropa nueva y usada.</p>
+                    <div class="social-media mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#proyectos" class="text-white text-decoration-none">Proyectos</a></li>
+                        <li class="mb-2"><a href="#equipo" class="text-white text-decoration-none">Equipo</a></li>
+                        <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="mb-3">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Tiendas Online</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Apps Móviles</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Marketing Digital</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Sistemas de Inventario</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnológica 123, Ciudad Innovación</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 234 567 890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> contacto@lumaritat.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 LuMariTat. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Política de Privacidad</a>
+                    <a href="#" class="text-white text-decoration-none">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- DataTables JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/dataTables.bootstrap5.min.js"></script>
+    
+    <!-- FullCalendar JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
